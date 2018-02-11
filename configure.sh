@@ -1,4 +1,5 @@
 #!/usr/bash
 cd build
-rm -rf *
+make clean
 cmake .. && make -j8
+exec ../output/prog
